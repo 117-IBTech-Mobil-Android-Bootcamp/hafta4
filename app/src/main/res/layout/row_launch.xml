@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:elevation="10dp"
+    android:background="#2196F3">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_mission_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mission Name, " />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/textview_launch_yer"
+        app:layout_constraintBaseline_toBaselineOf="@id/textview_mission_name"
+        app:layout_constraintStart_toEndOf="@id/textview_mission_name"
+        tools:text="2006" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/main_text_color_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_mission_name"
+        tools:text="Engine failure at 33 seconds and loss of vehicle" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/seperator"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/textview_details" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_rocket_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seperator"
+        android:text="ROCKET INFORMATION"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/rocket_type"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="ROCKET_ID"
+        app:layout_constraintTop_toBottomOf="@id/textview_rocket_title"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        android:id="@+id/rocket_id"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/rocket_id"
+        app:layout_constraintEnd_toStartOf="@id/rocket_name"
+        tools:text="ROCKET TYPE"
+        app:layout_constraintTop_toBottomOf="@id/textview_rocket_title"
+        android:id="@+id/rocket_type"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/rocket_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        tools:text="ROCKET NAME"
+        app:layout_constraintTop_toBottomOf="@id/textview_rocket_title"
+        android:id="@+id/rocket_name"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

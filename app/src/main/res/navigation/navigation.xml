@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.patikadev.deneme1.ui.Fragment1"
+        android:label="Fragment1"
+        tools:layout="@layout/fragment_1">
+        <action
+            android:id="@+id/action_fragment1_to_fragment4"
+            app:destination="@id/fragment4"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_fragment1_to_spaceXLaunchesFragment"
+            app:destination="@id/spaceXLaunchesFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.patikadev.deneme1.ui.Fragment2"
+        tools:layout="@layout/fragment_2"
+
+        android:label="Fragment2" >
+        <action
+            android:id="@+id/action_fragment2_to_fragment33"
+            app:destination="@id/fragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.patikadev.deneme1.ui.Fragment3"
+        tools:layout="@layout/fragment_3"
+
+        android:label="Fragment3" />
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.patikadev.deneme1.ui.testresult.FragmentRecyclerViewSample"
+        tools:layout="@layout/fragment_recyclerview_sample"
+        android:label="Fragment4" />
+    <fragment
+        android:id="@+id/spaceXLaunchesFragment"
+        tools:layout="@layout/fragment_spacex_launches"
+        android:name="com.patikadev.deneme1.ui.spacex.SpaceXLaunchesFragment"
+        android:label="SpaceXLaunchesFragment" />
+</navigation>
