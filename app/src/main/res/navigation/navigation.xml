@@ -24,6 +24,13 @@
             app:exitAnim="@anim/exit_to_left"
             app:popEnterAnim="@anim/enter_from_left"
             app:popExitAnim="@anim/exit_to_right"/>
+        <action
+            android:id="@+id/action_fragment1_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"/>
     </fragment>
     <fragment
         android:id="@+id/fragment2"
@@ -51,4 +58,9 @@
         tools:layout="@layout/fragment_spacex_launches"
         android:name="com.patikadev.deneme1.ui.spacex.SpaceXLaunchesFragment"
         android:label="SpaceXLaunchesFragment" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.patikadev.deneme1.ui.todo_app.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register"/>
 </navigation>

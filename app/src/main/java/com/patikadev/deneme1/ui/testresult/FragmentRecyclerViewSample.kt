@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
-import com.patikadev.deneme1.base.HomeActivity
+import com.patikadev.deneme1.ui.activities.HomeActivity
 import com.patikadev.deneme1.R
 import com.patikadev.deneme1.base.BaseFragment
 import com.patikadev.deneme1.ui.testresult.adapter.NewMatchMakingResultRecyclerAdapter
@@ -24,7 +24,7 @@ class FragmentRecyclerViewSample : BaseFragment() {
 
     }
 
-    private fun prepareView() {
+    override fun prepareView() {
         (requireActivity() as HomeActivity).hideNavigation()
 
 

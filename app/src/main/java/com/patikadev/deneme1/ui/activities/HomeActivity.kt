@@ -1,4 +1,4 @@
-package com.patikadev.deneme1.base
+package com.patikadev.deneme1.ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

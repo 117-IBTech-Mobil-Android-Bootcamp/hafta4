@@ -40,7 +40,7 @@ class SpaceXLaunchesFragment : BaseFragment() {
 
 
         //UI THREAD'DEN KOPMA OLUYOR. BAŞAKA BİR THREAD OLUSUYOR.
-        ServiceConnector.restInterface.getLaunches().enqueue(object : BaseCallBack<List<Launch>>(){
+       /* ServiceConnector.restInterface.getLaunches().enqueue(object : BaseCallBack<List<Launch>>(){
 
             override fun onFailure() {
                 super.onFailure()
@@ -51,7 +51,7 @@ class SpaceXLaunchesFragment : BaseFragment() {
                 populateData(data)
 
             }
-        })
+        })*/
 
 
         /**
@@ -82,7 +82,7 @@ class SpaceXLaunchesFragment : BaseFragment() {
     }
 
 
-    private fun prepareView() {
+    override fun prepareView() {
         launch_count.text = "this data will be fetch from the back end"
     }
 

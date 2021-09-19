@@ -22,5 +22,9 @@ class Fragment1 : BaseFragment() {
         button2.setOnClickListener {
             navigateToNextFragment(R.id.action_fragment1_to_fragment4)
         }
+
+        button_register.setOnClickListener {
+            navigateToNextFragment(R.id.action_fragment1_to_registerFragment)
+        }
     }
 }
